@@ -16,6 +16,7 @@ int print_format(char specifier, va_list ap)
 	else if (specifier == '%')
 	{
 		char p = 37;
+
 		count += write(1, &p, 1);
 	}
 	else if (specifier == 's')
